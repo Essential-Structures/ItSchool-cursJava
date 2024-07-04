@@ -24,7 +24,7 @@ public class NumericPromotion {
 
         int newIntValue = (int)testLongValue;
 
-        System.out.println("Test long value: " + testLongValue);
+        System.out.println("public_package.Test long value: " + testLongValue);
         System.out.println("New int value: " + newIntValue);
     }
 }
