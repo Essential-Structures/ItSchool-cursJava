@@ -1,13 +1,13 @@
-package src.sesion6_Core_JAVA_APIs.challenge;
+package session_6_java_core_apis.challenge;
 
 //Stringbuilder reverse string
 
 public class Challenge1 {
-    private static StringBuilder reversed = null;
+    static StringBuilder reversed=new StringBuilder();
 
     public static StringBuilder reverser(String string) {
-        for (int i = string.length(); i > 0; i--)
-            reversed = reversed.append(string.charAt(i - 1));
+        for (int i = string.length()-1; i > 0; i--)
+            reversed = reversed.append(string.charAt(i));
 
         return reversed;
     }
