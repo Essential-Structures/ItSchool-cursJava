@@ -2,7 +2,7 @@ package session_6_java_core_apis.challenge;
 
 //Stringbuilder palindrome
 
-public static class Challenge2 {//modifier static not allowed here. why?
+public class Challenge2 {//modifier static not allowed here. why?
     public static String isPalindrome(String string) {
         var sb = new StringBuilder(string);
         if (sb.equals(sb.reverse())) return "E palindrom";
