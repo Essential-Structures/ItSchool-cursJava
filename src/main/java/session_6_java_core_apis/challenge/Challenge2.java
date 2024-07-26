@@ -1,10 +1,25 @@
-package session_6_java_core_apis.challenge;
+package main.java.session_6_java_core_apis.challenge;
 
 //Stringbuilder palindrome
 
 public class Challenge2 {//modifier static not allowed here. why?
-    public static String isPalindrome(String string) {
-        var sb = new StringBuilder(string);
+    static boolean isPalindrome = true;
+
+    public static boolean isPalindrome(String string) {
+        StringBuilder sb = new StringBuilder(string);
+        StringBuilder reverse = sb.reverse();
+
+        for (int i = 0; i < sb.length(); i++) {
+            if (sb.charAt(i) != reverse.charAt(i)) {
+                isPalindrome = false;
+                break;
+            }
+        }               //??? unde gresesc de imi da mereu true?
+
+        return isPalindrome;
+    }
+}
+/*vreau sa iterez prin sirul de caractere, folosind charAt(), simultan prin .this si this.reverse().
         if (sb.equals(sb.reverse())) return "E palindrom";
         else return ("Nu e: " + sb.reverse());
     }
@@ -20,7 +35,7 @@ public class Challenge2 {//modifier static not allowed here. why?
             break;
         }
             return checker;
-}
+} */
 
-}
+
 

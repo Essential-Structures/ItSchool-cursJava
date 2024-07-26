@@ -1,4 +1,4 @@
-package session_6_java_core_apis.challenge;
+package main.java.session_6_java_core_apis.challenge;
 
 import java.util.List;
 
@@ -10,6 +10,6 @@ public class Challege4 {
         for (String i : stringsToConcat)
             concatenated.append(i);
 
-    return concatenated;
+        return concatenated;
     }
 }
