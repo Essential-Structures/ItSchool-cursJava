@@ -1,20 +1,22 @@
-package main.java.session_6_java_core_apis.challenge;
+package session_6_java_core_apis.challenge;
 
 //Stringbuilder palindrome
 
+import java.util.Locale;
+
 public class Challenge2 {//modifier static not allowed here. why?
-    static boolean isPalindrome = true;
 
-    public static boolean isPalindrome(String string) {
-        StringBuilder sb = new StringBuilder(string);
-        StringBuilder reverse = sb.reverse();
 
-        for (int i = 0; i < sb.length(); i++) {
-            if (sb.charAt(i) != reverse.charAt(i)) {
+    protected static boolean isPalindrome(String string) {
+        boolean isPalindrome = true;
+        StringBuilder reversed = new StringBuilder(string).reverse();
+
+        for (int i = 0; i < reversed.length(); i++) {
+            if (string.charAt(i) != reversed.charAt(i)) {
                 isPalindrome = false;
                 break;
             }
-        }               //??? unde gresesc de imi da mereu true?
+        }   //??? unde gresesc de imi da mereu true? Nu vreau sa fac cu for descendent
 
         return isPalindrome;
     }

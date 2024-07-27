@@ -1,4 +1,4 @@
-package main.java.session_6_java_core_apis.challenge;
+package session_6_java_core_apis.challenge;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ public class Session6ChallengeActivator {
 
     public static void main(String[] args) {
         Scanner keyboardInput = new Scanner(System.in);
-        System.out.println("Challenge1: \n insert stringToTestWith to reverse");
+        System.out.println("Challenge1: \n insert stringToTestWith ");
         String stringToTestWith = keyboardInput.nextLine();
 
 
@@ -17,8 +17,7 @@ public class Session6ChallengeActivator {
 
 
         /*Challenge2 - is it palindrome?*/
-        System.out.println("Challenge2 - is it palindrome?");
-        System.out.println(Challenge2.isPalindrome(stringToTestWith));
+        System.out.println("Challenge2 - is it palindrome?" + Challenge2.isPalindrome(stringToTestWith));
 
 
         /*Challenge3 - concat list of strings*/
@@ -31,5 +30,15 @@ public class Session6ChallengeActivator {
         stringlist.add("5t555");
 
         System.out.println("Concatenated: " + Challenge3.concatenator(stringlist));
+
+        //Challenge 4 -remove vowels
+        System.out.println("Devoweled string is "+ Challege4.devowler(stringToTestWith));
+
+        //Challange5 - capitalize words
+        System.out.println("String with capitalied words is: " + Challenge5.wordCapitalizer(stringToTestWith));
+
+
+        //Challenge6 - substring replace
+        System.out.println("Challenge6-substring after replace "+ Challenge6.substrigReplacer());
     }
 }
