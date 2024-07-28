@@ -1,16 +1,13 @@
 package session_16_collections_framework.challenge;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
+import java.util.*;
 
 public class ArrayListChallenges {
+    final static List<String> list = new ArrayList<>(Arrays.asList("blue", "yellow", "green", "red"));
     public static void main(String[] args) {
 
-//1.create a new array list, add some colors (string) and print out the collection.
-        final List<String> list = new ArrayList<>(Arrays.asList("blue", "yellow", "green", "red"));
+        //1.create a new array list, add some colors (string) and print out the collection.
+
         list.add("addedPurple");
 
 //2. Write a Java program to iterate through all elements in a array list.
@@ -81,5 +78,9 @@ list.isEmpty();
 /*???19.trim the capacity of an array list the current list size.
 /*???20. increase the size of an array list.
 */
+    }
+
+    protected static Collection getList() {
+        return list;
     }
 }
