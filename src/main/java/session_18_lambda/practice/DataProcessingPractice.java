@@ -1,4 +1,4 @@
-package session_18.practice;
+package session_18_lambda.practice;
 
 import java.util.Arrays;
 import java.util.List;

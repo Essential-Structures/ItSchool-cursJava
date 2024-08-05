@@ -1,4 +1,4 @@
-package session_18.practice;
+package session_18_lambda.practice;
 
 public class GreetingServicePractice {
 
