@@ -1,10 +1,16 @@
 package session_16_collections_framework.challenge;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.*;
 
 public class ArrayListChallenges {
     final static List<String> list = new ArrayList<>(Arrays.asList("blue", "yellow", "green", "red"));
     public static void main(String[] args) {
+
+        System.out.println("=====================================================");
+        System.out.println("HashSet challenges");
+        HashSetChallenges.hashSetChallenger();
 
         //1.create a new array list, add some colors (string) and print out the collection.
 
@@ -76,9 +82,16 @@ list2=Collections.emptyList();
 list.isEmpty();
 
 /*???19.trim the capacity of an array list the current list size.
-/*???20. increase the size of an array list.
+Is it posible to have null ArrayList slots?
+
+
+ /*???20. increase the size of an array list.
+Why is it necesary to increase the size of an ArrayList?
+I know it does not have fixed finite capacity to hold objects, as does a primitive data type aray
 */
+
     }
+
 
     protected static Collection getList() {
         return list;
