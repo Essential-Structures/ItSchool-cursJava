@@ -10,7 +10,7 @@ public class HashSetChallenges {
 //    1. program to append the specified element to the end of a hash set. 
         setToTestWith.add("\n1. HashSet appended at end");//       2.Write a Java program to iterate through all elements in a hash list. 
 //        3.Write a Java program to get the number of elements in a hash set. 
-        for (Set setElement : setToTestWith) System.out.println(setElement + ", ");
+        for (Object setElement : setToTestWith) System.out.println(setElement + ", ");
 //        4.Write a Java program to empty a hash set.
 //        5.Write a Java program to test a hash set is empty or not. 
         Set setToEmpty = new HashSet(session_16_collections_framework.challenge.ArrayListChallenges.getList());
