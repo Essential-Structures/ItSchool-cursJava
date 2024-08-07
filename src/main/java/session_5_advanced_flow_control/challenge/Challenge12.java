@@ -1,4 +1,4 @@
-package main.java.session_5_advanced_flow_control.challenge;
+package session_5_advanced_flow_control.challenge;
 
 import java.util.Scanner;
 

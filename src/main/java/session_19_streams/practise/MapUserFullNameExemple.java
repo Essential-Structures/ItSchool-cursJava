@@ -13,7 +13,7 @@ public class MapUserFullNameExemple {
 
         //map users according to full names, into a list
 
-        List<String> fullNames = users.stream()
-                .map (name->name.getName()+ " " + surName.getSurname() );
+ //       List<String> fullNames = users.stream()
+   //             .map (name->name.getName()+ " " + surName.getSurname() );
     }
 }
